@@ -125,6 +125,7 @@ class SPCI_and_EnbPI():
                     f'Took {time.time()-start1} secs to finish the {self.b}th boostrap model')
             else:
                 Xboot, Yboot = detach_torch(Xboot), detach_torch(Yboot)
+                Yboot = Yboot.reshape(-1, 1)
                 Xfull = detach_torch(Xfull)
                 # NOTE, NO sigma estimation because these methods by deFAULT are fitting Y, but we have no observation of errors
                 model = self.regressor
