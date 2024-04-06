@@ -1,0 +1,14 @@
+
+Advantages and disadvantages of Conformal prediction
+    https://medium.com/@data-overload/conformal-prediction-a-critic-to-predictive-models-27501dcc76d4
+* 		Computational Complexity: Conformal prediction methods can be computationally intensive, especially for large datasets or complex models. Generating confidence regions or sets requires additional computation compared to traditional point predictions.
+* 		Calibration: Ensuring proper calibration of conformal prediction methods can be challenging. While conformal predictors aim to provide valid confidence levels, achieving proper calibration in practice may require careful tuning and validation.
+* 		Sensitivity to Training Data: Conformal prediction methods are sensitive to the training data distribution. They rely on the assumption that the training data are representative of the test data. If the training data are not sufficiently diverse or representative, the resulting confidence regions may be overly conservative or overly optimistic.
+* 		Limited Applicability: Conformal prediction methods may not be suitable for all types of machine learning tasks. They are primarily designed for classification and regression problems and may not generalize well to other types of tasks or structured data.
+* 		Memory Requirements: Some conformal prediction algorithms require storing information about the entire training dataset, which can be memory-intensive, particularly for large datasets.
+* 		Interpretability: The interpretation of conformal prediction results can be more challenging compared to traditional point predictions. Confidence regions or sets may not be as intuitive to interpret, especially for non-experts.
+* 		Trade-off between Coverage and Efficiency: There is often a trade-off between the coverage of the confidence regions and the efficiency of the conformal prediction method. Achieving higher coverage rates may require sacrificing computational efficiency, and vice versa.
+* 		Assumption of Exchangeability: Many conformal prediction methods assume exchangeability of data points, meaning that the order of observations does not affect the predictions. This assumption may not hold in all real-world scenarios, such as time-series data or data with temporal dependencies.
+Overall, while conformal prediction offers several benefits such as valid uncertainty quantification and robustness to model misspecification, it also presents challenges that need to be carefully considered when applying it in practice.
+
+
